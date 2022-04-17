@@ -6,7 +6,6 @@ const config = new Configuration({
   apiKey: process.env.OPENAI_API_KEY,
 });
 
-
 const openai = new OpenAIApi(config);
 
 export default async function handler(
@@ -22,8 +21,7 @@ export default async function handler(
     
     res.status(400).json(err)
   }
-  
-  
+
 }
 
 type Prompt = string;
